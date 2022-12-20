@@ -1,9 +1,6 @@
 import styled from 'styled-components'
 
 export const TransactionsContainer = styled.main`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
   max-width: 70rem;
   margin: 4rem auto 0;
@@ -14,6 +11,7 @@ export const TransactionsTable = styled.table`
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 0.5rem;
+  margin-top: 1.5rem;
 
   td {
     padding: 1.25rem 2rem;
