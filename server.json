@@ -23,6 +23,22 @@
       "category": "Educação",
       "price": 1980,
       "createdAt": "2022-12-22T11:40:12.339Z"
+    },
+    {
+      "description": "App ",
+      "price": 300,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2022-12-23T17:26:35.036Z",
+      "id": 4
+    },
+    {
+      "description": "Açai",
+      "price": 20,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2022-12-23T17:42:22.916Z",
+      "id": 5
     }
   ]
 }

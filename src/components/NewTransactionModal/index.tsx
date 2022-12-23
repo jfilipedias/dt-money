@@ -10,6 +10,8 @@ import {
   TransactionTypeButton,
   TransactionTypeContainer,
 } from './styles'
+import { useContext } from 'react'
+import { TransactionContext } from '../../contexts/TransactionsContext'
 
 const newTransactionFormSchema = z.object({
   description: z.string(),
@@ -26,14 +28,16 @@ export function NewTransactionModal() {
     register,
     handleSubmit,
     formState: { isSubmitting },
+    reset,
   } = useForm<NewTransactionFormInputs>({
     resolver: zodResolver(newTransactionFormSchema),
   })
 
-  async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+  const { createTransaction } = useContext(TransactionContext)
 
-    console.log({ data })
+  async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
+    createTransaction(data)
+    reset()
   }
 
   return (
@@ -55,7 +59,7 @@ export function NewTransactionModal() {
             {...register('description')}
           />
           <input
-            type="text"
+            type="number"
             placeholder="Preço"
             required
             {...register('price', { valueAsNumber: true })}
