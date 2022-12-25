@@ -6,7 +6,11 @@
 </p>
 <br>
 
-O DT Money é uma web app que permite o controle financeiro do usuário.
+O DT Money é uma web app que permite o controle financeiro do usuário. Nele é possível adicionar novas transações e ver um resumo de entradas e saídas do usuário. Para isso foi implementado uma fake API para simulação de uma comunicação com o back-end.
+
+<div align="center">
+  <img alt="Image apresentando a interface do projeto dt money" title="DT Money" src="./docs/cover.png" />
+</div>
 
 ## Extras
 
@@ -32,13 +36,15 @@ npm run dev
 
 ## Tecnologias
 
-- [date-fns](https://date-fns.org/)
+- [Axios](https://axios-http.com/ptbr/)
 - [ESLint](https://eslint.org/)
-- [React Router](https://reactrouter.com/en/main)
+- [JSON Server](https://github.com/typicode/json-server)
+- [React Hook Form](https://react-hook-form.com/)
 - [ReactJS](https://reactjs.org/)
 - [Styled Components](https://styled-components.com/)
 - [Typescript](https://typescriptlang.org/)
 - [Vite](https://vitejs.dev/)
+- [Zod](https://zod.dev/)
 
 ## Licença
 
